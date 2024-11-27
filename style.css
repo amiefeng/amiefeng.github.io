@@ -1,0 +1,92 @@
+body {
+    padding:25px;
+    background: radial-gradient(circle at 0.4% -0.6%, rgb(143, 170, 210) 0%, rgb(255, 177, 177) 90%);    font-family: kanit;
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+    color: #2C363F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.welcome {
+    color: 2C363F;
+    font-family: kanit;
+}
+
+.card {
+    background-color: #F3F3F2;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.card::after {
+    content: "";
+    display: table;
+    clear: both; /* Ensures floated children are contained */
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+  
+.navbar a {
+    float: right;
+    /* display: block; */
+    text-decoration: underline;
+    color: #2C363F;
+    text-align: center;
+    padding: 14px 16px;
+}
+  
+.navbar a:hover {
+    color: #E75A7C;
+}
+
+/* landing page */
+#landing{
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 10px; /* Add spacing between elements */
+    justify-content: space-between; /* Align elements evenly */
+    align-items: center; /* Vertically center the items */
+    background-color: #F3F3F2;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.aboutSquare {
+    flex: 1;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #E75A7C;
+    float: left;
+    text-decoration: bold;
+}
+
+.uniMiniCard {
+    flex: 1;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #383943;
+    float: right;
+    text-decoration: bold;
+}
+
+.projectMiniCard {
+    flex: 1;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EDA8B3;
+    text-decoration: bold;
+    float: right;
+}
