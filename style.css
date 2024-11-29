@@ -67,11 +67,11 @@ body {
     border-radius: 15px;
     padding: 10px;
     background-color: #E75A7C;
-    float: left;
+    float: right;
     text-decoration: bold;
 }
 
-.uniMiniCard {
+/* .uniMiniCard {
     flex: 1;
     color: white;
     border-radius: 15px;
@@ -79,7 +79,7 @@ body {
     background-color: #383943;
     float: right;
     text-decoration: bold;
-}
+} */
 
 .projectMiniCard {
     flex: 1;
