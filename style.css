@@ -10,11 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-.welcome {
-    color: 2C363F;
-    font-family: kanit;
-}
-
 .card {
     background-color: #F3F3F2;
     border-radius: 15px;
@@ -28,28 +23,45 @@ body {
     clear: both; /* Ensures floated children are contained */
 }
 
-/* navbar */
-.navbar {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+/* Header */
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-  
+
+/* Navbar */
+.navbar {
+    display: flex; /* Use flexbox for alignment */
+    /* justify-content: space-between; Space between "Amie" and the links */
+    align-items: center; /* Vertically align items */
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Brand */
+.brand {
+    font-family: 'Kanit', sans-serif; /* Ensure font is consistent */
+    font-size: 30px; /* Adjust font size */
+    color: #2C363F;
+    margin: 0; /* Remove default margins */
+}
+
+/* Navbar Links */
 .navbar a {
     float: right;
-    /* display: block; */
     text-decoration: underline;
     color: #2C363F;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
 }
-  
+
 .navbar a:hover {
     color: #E75A7C;
 }
 
-/* landing page */
+/* Landing Page - Ensure cards do not flex */
 #landing{
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow wrapping if needed */
